@@ -1,0 +1,107 @@
+# ==============================================================================
+# AYRA – Official Git Ignore Rules
+# Designed for safe, zero-leak repository commits
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment and Secret Configuration Files
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.env.*
+*.local
+*.local.*
+
+# Explicitly allow the sanitized template file
+!.env.example
+
+# ------------------------------------------------------------------------------
+# 2. Secret Keys, Certificates, and Private Credentials
+# ------------------------------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.pkcs12
+*service_role*
+*service-account*.json
+*credentials*.json
+*secret*.json
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ------------------------------------------------------------------------------
+# 3. Dependencies & Package Manager Outputs
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+
+# ------------------------------------------------------------------------------
+# 4. Logs, Diagnostics & Debugging
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# 5. Build, Cache & Temporary Directories
+# ------------------------------------------------------------------------------
+dist/
+build/
+out/
+.output/
+.cache/
+.temp/
+.tmp/
+tmp/
+temp/
+.parcel-cache/
+.next/
+.nuxt/
+
+# ------------------------------------------------------------------------------
+# 6. Operating System Artifacts
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ------------------------------------------------------------------------------
+# 7. IDE & Editor Metadata
+# ------------------------------------------------------------------------------
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+

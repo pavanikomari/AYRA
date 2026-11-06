@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYRA – Her Voice. Her Rights. Her Rise. | Women Empowerment Platform</title>
+    <meta name="description"
+        content="AYRA is a premier women empowerment platform in India dedicated to legal awareness, education, safety, government schemes, and community support.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome 6 Icons for crisp, authoritative icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <aside class="top-bar" aria-label="National Helpline & Quick Support">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span class="badge-live"><i class="fa-solid fa-circle-dot"></i> 24x7 India Helplines:</span>
+                <a href="tel:112" class="top-link"><i class="fa-solid fa-phone-volume"></i> Emergency:
+                    <strong>112</strong></a>
+                <span class="divider">|</span>
+                <a href="tel:1091" class="top-link"><i class="fa-solid fa-shield-halved"></i> Women Helpline:
+                    <strong>1091</strong></a>
+                <span class="divider">|</span>
+                <a href="tel:181" class="top-link"><i class="fa-solid fa-hand-holding-heart"></i> Women in Distress:
+                    <strong>181</strong></a>
+            </div>
+            <div class="top-bar-right">
+                <div class="lang-selector-wrapper" id="langWrapper">
+                    <i class="fa-solid fa-language"></i>
+                    <label for="languageSelect" class="sr-only">Choose Language</label>
+                    <select id="languageSelect" class="lang-select" aria-label="Select Language">
+                        <option value="en" selected>English (India)</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="ta">தமிழ் (Tamil)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                        <option value="mr">मराठी (Marathi)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                    </select>
+                </div>
+                <button type="button" class="btn-audio-guide" id="btnAudioOverview"
+                    title="Listen to AYRA Website Overview">
+                    <i class="fa-solid fa-volume-high"></i> <span>Listen to Page</span>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sticky Header & Navbar -->
+    <header class="site-header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="brand-logo" aria-label="AYRA Home">
+                <div class="logo-symbol">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg"
+                        aria-hidden="true">
+                        <circle cx="20" cy="20" r="18" fill="url(#brandGrad)" />
+                        <path
+                            d="M20 7C20 7 22.5 13.5 27 16C31.5 18.5 35 20 35 20C35 20 28.5 22.5 26 27C23.5 31.5 20 35 20 35C20 35 17.5 28.5 13 26C8.5 23.5 5 20 5 20C5 20 11.5 17.5 14 13C16.5 8.5 20 7 20 7Z"
+                            fill="#FFF9F1" />
+                        <circle cx="20" cy="20" r="4.5" fill="#49345E" />
+                        <defs>
+                            <linearGradient id="brandGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#A88BC7" />
+                                <stop offset="1" stop-color="#49345E" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">AYRA</span>
+                    <span class="brand-tagline">Her Voice. Her Rights. Her Rise.</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#rights" class="nav-link">Know Your Rights</a></li>
+                    <li class="nav-item"><a href="#opportunities" class="nav-link">Opportunities</a></li>
+                    <li class="nav-item"><a href="#safety" class="nav-link">Safety</a></li>
+                    <li class="nav-item"><a href="#voice" class="nav-link">Voice Assistant</a></li>
+                    <li class="nav-item"><a href="#community" class="nav-link">Community</a></li>
+                    <li class="nav-item"><a href="#marketplace" class="nav-link">Marketplace</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons & Utilities -->
+            <div class="header-actions">
+                <!-- Quick Search Toggle -->
+                <button type="button" class="icon-btn" id="searchToggleBtn" aria-label="Search AYRA platform"
+                    title="Search AYRA">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <!-- Cart Icon for Marketplace -->
+                <button type="button" class="icon-btn cart-toggle-btn" id="cartToggleBtn"
+                    aria-label="Open Shopping Cart" title="Cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+
+                <!-- User Account / Auth Widget -->
+                <div class="user-auth-widget" id="userAuthWidget">
+                    <button type="button" class="btn btn-sm btn-outline-auth" id="headerAuthBtn" aria-label="Sign In or Register">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <span class="auth-btn-label">Sign In</span>
+                    </button>
+                    <!-- Authenticated Dropdown Menu (Hidden by default) -->
+                    <div class="auth-dropdown-menu" id="authDropdownMenu" aria-hidden="true">
+                        <div class="dropdown-user-header">
+                            <strong id="dropdownUserName">AYRA Member</strong>
+                            <small id="dropdownUserEmail">user@example.com</small>
+                            <span class="badge-role" id="dropdownUserRole">Beneficiary</span>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <button type="button" class="dropdown-item" id="dropdownDashboardBtn">
+                            <i class="fa-solid fa-table-columns"></i> My Dashboard
+                        </button>
+                        <button type="button" class="dropdown-item" id="dropdownProfileBtn">
+                            <i class="fa-solid fa-id-card"></i> Edit Profile
+                        </button>
+                        <hr class="dropdown-divider">
+                        <button type="button" class="dropdown-item text-danger" id="dropdownSignOutBtn">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Get Support CTA -->
+                <button type="button" class="btn btn-support" id="getSupportBtn" aria-label="Get Immediate Support">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>Get Support</span>
+                </button>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button type="button" class="hamburger-btn" id="mobileMenuBtn" aria-expanded="false"
+                    aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Expandable Live Search Modal/Bar -->
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+        <div class="search-container">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+                <input type="search" id="globalSearchInput"
+                    placeholder="Search rights, scholarships, schemes, safety contacts..." autocomplete="off">
+                <button type="button" class="search-close-btn" id="searchCloseBtn"
+                    aria-label="Close search">&times;</button>
+            </div>
+            <div class="search-suggestions" id="searchSuggestions">
+                <span class="suggestions-label">Popular searches:</span>
+                <button type="button" class="chip-query" data-query="Maternity">Maternity Benefits</button>
+                <button type="button" class="chip-query" data-query="POSH">Workplace POSH Act</button>
+                <button type="button" class="chip-query" data-query="Stand-Up India">Stand-Up India</button>
+                <button type="button" class="chip-query" data-query="Scholarship">Pragati Scholarship</button>
+                <button type="button" class="chip-query" data-query="Emergency">Helplines</button>
+            </div>
+            <div class="search-results-box" id="searchResultsBox"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <div class="drawer-brand">
+                <span class="drawer-logo-text">AYRA</span>
+                <span class="drawer-sub">Her Voice. Her Rights. Her Rise.</span>
+            </div>
+            <button type="button" class="drawer-close-btn" id="drawerCloseBtn"
+                aria-label="Close mobile menu">&times;</button>
+        </div>
+        <div class="drawer-body">
+            <!-- Mobile User Profile / Auth Section -->
+            <div class="drawer-user-section" id="drawerUserSection">
+                <button type="button" class="btn btn-secondary btn-full btn-drawer-auth" id="drawerAuthBtn">
+                    <i class="fa-regular fa-circle-user"></i> <span id="drawerAuthLabel">Sign In / Register</span>
+                </button>
+            </div>
+
+            <ul class="drawer-nav">
+                <li><a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="drawer-link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+                <li><a href="#rights" class="drawer-link"><i class="fa-solid fa-scale-balanced"></i> Know Your Rights</a></li>
+                <li><a href="#opportunities" class="drawer-link"><i class="fa-solid fa-graduation-cap"></i> Opportunities & Schemes</a></li>
+                <li><a href="#safety" class="drawer-link"><i class="fa-solid fa-shield-cat"></i> Safety & Emergency</a></li>
+                <li><a href="#voice" class="drawer-link"><i class="fa-solid fa-microphone-lines"></i> Voice Assistant</a></li>
+                <li><a href="#community" class="drawer-link"><i class="fa-solid fa-people-roof"></i> Community & Workshops</a></li>
+                <li><a href="#marketplace" class="drawer-link"><i class="fa-solid fa-bag-shopping"></i> Marketplace</a></li>
+                <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+            </ul>
+
+            <div class="drawer-actions">
+                <button type="button" class="btn btn-support btn-full" id="drawerSupportBtn">
+                    <i class="fa-solid fa-heart-pulse"></i> Immediate Help & Helplines
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-decorations" aria-hidden="true">
+                <div class="decor-circle circle-1"></div>
+                <div class="decor-circle circle-2"></div>
+                <div class="decor-circle circle-3"></div>
+                <div class="decor-shape shape-lotus"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span>A National Movement for Indian Women</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Her Voice. <br>
+                        <span class="gradient-text">Her Rights.</span> <br>
+                        Her Rise.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Empowering every woman across India with knowledge of legal rights, educational scholarships,
+                        career opportunities, emergency safety resources, and a stronger collective voice.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#features" class="btn btn-primary btn-lg">
+                            <span>Explore AYRA</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#rights" class="btn btn-secondary btn-lg">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <span>Discover Your Rights</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Trust Badges -->
+                    <div class="hero-trust-indicators">
+                        <div class="trust-item">
+                            <i class="fa-solid fa-shield-check"></i>
+                            <span>Verified Legal Guides</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fa-solid fa-language"></i>
+                            <span>Multilingual Assistance</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fa-solid fa-user-lock"></i>
+                            <span>100% Confidential & Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-stack">
+                        <!-- Main Hero Feature Visual -->
+                        <div class="hero-illustration-card">
+                            <div class="illustration-art">
+                                <div class="art-halo"></div>
+                                <div class="art-avatar">
+                                    <div class="art-woman-graphic">
+                                        <!-- Stylized SVG Illustration of a progressive Indian Woman -->
+                                        <svg viewBox="0 0 280 280" class="woman-svg" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="140" cy="140" r="130" fill="url(#haloGrad)" />
+                                            <!-- Decorative Sun rays / Mandala petals -->
+                                            <path
+                                                d="M140 20V40M140 240V260M20 140H40M240 140H260M55 55L69 69M211 211L225 225M55 225L69 211M211 69L225 55"
+                                                stroke="#A88BC7" stroke-width="3" stroke-linecap="round"
+                                                opacity="0.5" />
+                                            <!-- Elegant silhouette / modern vector figure -->
+                                            <path d="M90 250C90 195 110 170 140 170C170 170 190 195 190 250"
+                                                fill="#49345E" />
+                                            <!-- Traditional elegant drape accent -->
+                                            <path d="M115 190C125 210 155 230 185 248L190 250L135 250Z" fill="#F8E3EA"
+                                                opacity="0.85" />
+                                            <!-- Head & Face -->
+                                            <ellipse cx="140" cy="120" rx="36" ry="46" fill="#FBE5D6" />
+                                            <!-- Hair bun & flows -->
+                                            <path
+                                                d="M104 120C104 76 130 65 140 65C150 65 176 76 176 120C176 130 172 144 172 144L108 144C108 144 104 130 104 120Z"
+                                                fill="#49345E" />
+                                            <circle cx="140" cy="56" r="22" fill="#49345E" />
+                                            <!-- Bindi (Auspicious dot) -->
+                                            <circle cx="140" cy="106" r="3" fill="#A88BC7" />
+                                            <!-- Gentle features -->
+                                            <path d="M125 116C129 119 135 119 137 116" stroke="#49345E" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M143 116C145 119 151 119 155 116" stroke="#49345E" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M133 138C137 142 143 142 147 138" stroke="#A88BC7"
+                                                stroke-width="2.5" stroke-linecap="round" />
+                                            <defs>
+                                                <linearGradient id="haloGrad" x1="140" y1="10" x2="140" y2="270"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFF9F1" />
+                                                    <stop offset="0.5" stop-color="#E9E2F8" />
+                                                    <stop offset="1" stop-color="#DFF1E8" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero-live-pill floating-pill-1">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <strong>Scholarships Open</strong>
+                                    <small>5,000+ Girls Supported</small>
+                                </div>
+                            </div>
+
+                            <div class="hero-live-pill floating-pill-2">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <div>
+                                    <strong>POSH & FIR Rights</strong>
+                                    <small>Know your legal shield</small>
+                                </div>
+                            </div>
+
+                            <div class="hero-live-pill floating-pill-3">
+                                <i class="fa-solid fa-headset"></i>
+                                <div>
+                                    <strong>Voice Assistant</strong>
+                                    <small>Speak in your tongue</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Impact Metrics Bar -->
+            <div class="container">
+                <div class="metrics-ribbon">
+                    <div class="metric-card">
+                        <span class="metric-number">100,000+</span>
+                        <span class="metric-label">Women Empowered</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-card">
+                        <span class="metric-number">50+</span>
+                        <span class="metric-label">Simplified Legal Guides</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-card">
+                        <span class="metric-number">₹12 Cr+</span>
+                        <span class="metric-label">Scholarships Tracked</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-card">
+                        <span class="metric-number">12</span>
+                        <span class="metric-label">Indian Languages</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: SIX CORE FEATURE CARDS -->
+        <section class="section-padding bg-warm-cream" id="features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Empowerment Pillars</span>
+                    <h2 class="section-title">The AYRA Ecosystem</h2>
+                    <p class="section-subtitle">
+                        A comprehensive, compassionate suite of tools engineered to guide, protect, educate and uplift
+                        women across every walk of life.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- 1. AYRA RIGHTS -->
+                    <article class="feature-card card-lavender">
+                        <div class="card-icon-wrap icon-purple">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div class="card-badge-top">Legal Awareness</div>
+                        <h3 class="card-title">AYRA RIGHTS</h3>
+                        <p class="card-desc">
+                            Understand Indian constitution guarantees, domestic violence protection, workplace
+                            harassment (POSH), zero FIR procedures, and equal property inheritance rights in clear,
+                            jargon-free language.
+                        </p>
+                        <ul class="card-highlights">
+                            <li><i class="fa-solid fa-check"></i> POSH Act 2013 Toolkit</li>
+                            <li><i class="fa-solid fa-check"></i> Right to Free Legal Aid</li>
+                            <li><i class="fa-solid fa-check"></i> Domestic Violence Act 2005</li>
+                        </ul>
+                        <a href="#rights" class="card-btn" data-feature="rights">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- 2. AYRA GROW -->
+                    <article class="feature-card card-blush">
+                        <div class="card-icon-wrap icon-pink">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="card-badge-top">Education & Careers</div>
+                        <h3 class="card-title">AYRA GROW</h3>
+                        <p class="card-desc">
+                            Discover verified scholarships for school and college girls, government skill-training
+                            schemes, return-to-work programs, entrepreneurial grants, and professional mentorship
+                            networks.
+                        </p>
+                        <ul class="card-highlights">
+                            <li><i class="fa-solid fa-check"></i> STEM & Higher Ed Grants</li>
+                            <li><i class="fa-solid fa-check"></i> Stand-Up India & MUDRA Loans</li>
+                            <li><i class="fa-solid fa-check"></i> Free Tech & Vocational Courses</li>
+                        </ul>
+                        <a href="#opportunities" class="card-btn" data-feature="grow">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- 3. AYRA SAFE -->
+                    <article class="feature-card card-peach">
+                        <div class="card-icon-wrap icon-peach">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="card-badge-top">Safety & Helplines</div>
+                        <h3 class="card-title">AYRA SAFE</h3>
+                        <p class="card-desc">
+                            Access emergency panic dials, 24/7 verified helplines, One-Stop Crisis Centres (Sakhi
+                            Centres) directory, cyber safety blueprints, and discrete digital distress strategies.
+                        </p>
+                        <ul class="card-highlights">
+                            <li><i class="fa-solid fa-check"></i> Instant Click-to-Call 112 / 1091</li>
+                            <li><i class="fa-solid fa-check"></i> Digital Safety & Cyber Stalking Guide</li>
+                            <li><i class="fa-solid fa-check"></i> Sakhi One-Stop Centre Finder</li>
+                        </ul>
+                        <a href="#safety" class="card-btn" data-feature="safe">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- 4. AYRA VOICE -->
+                    <article class="feature-card card-mint">
+                        <div class="card-icon-wrap icon-mint">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <div class="card-badge-top">Multilingual Voice</div>
+                        <h3 class="card-title">AYRA VOICE</h3>
+                        <p class="card-desc">
+                            Bridging the digital literacy divide. Speak or listen in Hindi, Tamil, Bengali, Telugu,
+                            Marathi, and English to receive instantaneous answers about rights, schemes, and urgent
+                            support.
+                        </p>
+                        <ul class="card-highlights">
+                            <li><i class="fa-solid fa-check"></i> Browser Speech Synthesis</li>
+                            <li><i class="fa-solid fa-check"></i> Vernacular Audio Explanations</li>
+                            <li><i class="fa-solid fa-check"></i> Hands-Free Accessibility</li>
+                        </ul>
+                        <a href="#voice" class="card-btn" data-feature="voice">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- 5. AYRA CONNECT -->
+                    <article class="feature-card card-lavender">
+                        <div class="card-icon-wrap icon-purple">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <div class="card-badge-top">Community & Workshops</div>
+                        <h3 class="card-title">AYRA CONNECT</h3>
+                        <p class="card-desc">
+                            Join peer circles, register for weekend financial literacy sessions, legal clinics, career
+                            bootcamps, and connect with trusted grassroots NGOs operating across Indian districts.
+                        </p>
+                        <ul class="card-highlights">
+                            <li><i class="fa-solid fa-check"></i> Free Certified Masterclasses</li>
+                            <li><i class="fa-solid fa-check"></i> Sisterhood Peer Support Hubs</li>
+                            <li><i class="fa-solid fa-check"></i> Verified NGO & Legal Aid Connect</li>
+                        </ul>
+                        <a href="#community" class="card-btn" data-feature="connect">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- 6. AYRA CARE -->
+                    <article class="feature-card card-blush">
+                        <div class="card-icon-wrap icon-pink">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <div class="card-badge-top">Wellbeing & Marketplace</div>
+                        <h3 class="card-title">AYRA CARE</h3>
+                        <p class="card-desc">
+                            Support women artisans, self-help groups (SHGs), and access curated personal safety
+                            accessories, eco-sanitary care, and holistic wellbeing resources designed by women, for
+                            women.
+                        </p>
+                        <ul class="card-highlights">
+                            <li><i class="fa-solid fa-check"></i> Handcrafted Artisan Showcase</li>
+                            <li><i class="fa-solid fa-check"></i> Personal Safety Hardware</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Direct Fair Compensation</li>
+                        </ul>
+                        <a href="#marketplace" class="card-btn" data-feature="care">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: ABOUT AYRA -->
+        <section class="section-padding bg-lavender" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-col">
+                        <div class="about-card-banner">
+                            <div class="banner-inner">
+                                <div class="banner-badge">Our Genesis</div>
+                                <h3 class="banner-heading">Built for India's 700 Million Daughters, Mothers &
+                                    Trailblazers</h3>
+                                <p class="banner-text">
+                                    In a country as vast and culturally rich as India, constitutional guarantees and
+                                    government schemes often remain under-accessed due to legal jargon, language
+                                    barriers, and fragmented information. AYRA was born to change that.
+                                </p>
+                                <div class="quote-card">
+                                    <p class="quote-text">
+                                        "When you empower a woman, you build an unshakeable family, an empowered
+                                        village, and a proud nation."
+                                    </p>
+                                    <span class="quote-author">— AYRA Charter of Empowerment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-col">
+                        <span class="section-tag">About AYRA</span>
+                        <h2 class="section-title">An Independent Bridge to Equality, Justice & Independence</h2>
+                        <p class="section-lead">
+                            AYRA is a dedicated national digital platform bridging the gap between Indian legal
+                            frameworks, socioeconomic opportunities, and every woman seeking to realize her
+                            constitutional dignity.
+                        </p>
+
+                        <div class="pillars-list">
+                            <div class="pillar-row">
+                                <div class="pillar-icon"><i class="fa-solid fa-balance-scale"></i></div>
+                                <div>
+                                    <h4>Democratizing Legal Awareness</h4>
+                                    <p>Translating complex Indian penal codes, civil rights, and special acts into plain
+                                        language summaries with actionable step-by-step guidance.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-row">
+                                <div class="pillar-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div>
+                                    <h4>Bridging Socio-Economic Divides</h4>
+                                    <p>Curating central and state government schemes, micro-loans, tech scholarships,
+                                        and women-centric enterprise incubators.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-row">
+                                <div class="pillar-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                                <div>
+                                    <h4>Zero-Compromise Safety Ecosystem</h4>
+                                    <p>Aggregating verified SOS helplines, One-Stop Crisis Sakhi Centres, cyber-crime
+                                        response channels, and practical de-escalation tips.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats-row">
+                            <div class="about-stat">
+                                <strong>28 States & 8 UTs</strong>
+                                <span>Directory Coverage</span>
+                            </div>
+                            <div class="about-stat">
+                                <strong>100% Free</strong>
+                                <span>Public Service Resource</span>
+                            </div>
+                            <div class="about-stat">
+                                <strong>NGO Coalition</strong>
+                                <span>80+ Partner Organizations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: KNOW YOUR RIGHTS -->
+        <section class="section-padding bg-warm-cream" id="rights">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-split">
+                        <div>
+                            <span class="section-tag">Legal Empowerment</span>
+                            <h2 class="section-title">Know Your Constitutional & Legal Rights</h2>
+                            <p class="section-subtitle">
+                                Knowledge is your strongest shield. Learn your guaranteed legal protections under Indian
+                                law, explained with practical steps.
+                            </p>
+                        </div>
+                        <div class="rights-search-wrap">
+                            <div class="filter-pill-group" id="rightsFilterGroup">
+                                <button type="button" class="filter-btn active" data-filter="all">All Rights</button>
+                                <button type="button" class="filter-btn" data-filter="workplace">Workplace</button>
+                                <button type="button" class="filter-btn" data-filter="family">Family & Marriage</button>
+                                <button type="button" class="filter-btn" data-filter="safety">Criminal & FIR</button>
+                                <button type="button" class="filter-btn" data-filter="property">Property &
+                                    Finance</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rights-grid" id="rightsGrid">
+                    <!-- Right 1: Workplace POSH -->
+                    <article class="rights-card" data-category="workplace">
+                        <div class="rights-card-header">
+                            <span class="tag-category">Workplace</span>
+                            <div class="card-header-actions">
+                                <button type="button" class="btn-bookmark" data-type="right" data-slug="posh-act-2013" title="Save to Bookmarks" aria-label="Save this legal right">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                                <button type="button" class="btn-read-aloud"
+                                    data-speak="Right against Sexual Harassment at Workplace. The POSH Act 2013 mandates that every organisation with 10 or more employees must establish an Internal Complaints Committee. You have the right to confidential inquiry and interim relief."
+                                    title="Read this right aloud">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="rights-title">Prevention of Sexual Harassment (POSH Act, 2013)</h3>
+                        <p class="rights-summary">
+                            Every employer with 10 or more employees must have an Internal Committee (IC). Women have
+                            the right to a confidential, time-bound investigation and protection from retaliation.
+                        </p>
+                        <div class="rights-points">
+                            <span><i class="fa-solid fa-check"></i> 90-day time limit to complete inquiry</span>
+                            <span><i class="fa-solid fa-check"></i> Right to seek transfer or paid leave during
+                                inquiry</span>
+                            <span><i class="fa-solid fa-check"></i> Strict confidentiality of victim identity</span>
+                        </div>
+                        <button type="button" class="rights-details-btn" data-modal="poshModal" data-slug="posh-act-2013">
+                            <span>View Full Guide & Filing Steps</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+
+                    <!-- Right 2: Zero FIR -->
+                    <article class="rights-card" data-category="safety">
+                        <div class="rights-card-header">
+                            <span class="tag-category">Criminal & Police</span>
+                            <div class="card-header-actions">
+                                <button type="button" class="btn-bookmark" data-type="right" data-slug="zero-fir-police-rights" title="Save to Bookmarks" aria-label="Save this legal right">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                                <button type="button" class="btn-read-aloud"
+                                    data-speak="Right to Zero FIR. A woman can lodge a First Information Report at any police station across India, regardless of where the incident occurred. Police cannot refuse to register it."
+                                    title="Read this right aloud">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="rights-title">Right to Zero FIR & Safe Police Investigation</h3>
+                        <p class="rights-summary">
+                            An FIR can be lodged at <em>any</em> police station across India, irrespective of
+                            jurisdiction. The station must accept the complaint and subsequently transfer it to the
+                            relevant station.
+                        </p>
+                        <div class="rights-points">
+                            <span><i class="fa-solid fa-check"></i> Police cannot refuse registration under any
+                                excuse</span>
+                            <span><i class="fa-solid fa-check"></i> Women cannot be summoned to station after
+                                sunset</span>
+                            <span><i class="fa-solid fa-check"></i> Right to be accompanied by a female officer or
+                                lawyer</span>
+                        </div>
+                        <button type="button" class="rights-details-btn" data-modal="zeroFirModal" data-slug="zero-fir-police-rights">
+                            <span>View Full Guide & Filing Steps</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+
+                    <!-- Right 3: Domestic Violence Act -->
+                    <article class="rights-card" data-category="family">
+                        <div class="rights-card-header">
+                            <span class="tag-category">Family & Home</span>
+                            <div class="card-header-actions">
+                                <button type="button" class="btn-bookmark" data-type="right" data-slug="domestic-violence-act-2005" title="Save to Bookmarks" aria-label="Save this legal right">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                                <button type="button" class="btn-read-aloud"
+                                    data-speak="Protection of Women from Domestic Violence Act 2005. Protects women from physical, emotional, verbal, sexual, and economic abuse in a domestic shared household."
+                                    title="Read this right aloud">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="rights-title">Protection from Domestic Violence Act (PWDVA, 2005)</h3>
+                        <p class="rights-summary">
+                            Covers physical, emotional, sexual, verbal, and economic abuse. Guarantees the right to
+                            reside in the shared household, protection orders, and financial maintenance.
+                        </p>
+                        <div class="rights-points">
+                            <span><i class="fa-solid fa-check"></i> Protection from dispossession or eviction</span>
+                            <span><i class="fa-solid fa-check"></i> Monthly monetary maintenance and medical
+                                compensation</span>
+                            <span><i class="fa-solid fa-check"></i> Free Protection Officer assistance in every
+                                district</span>
+                        </div>
+                        <button type="button" class="rights-details-btn" data-modal="domesticViolenceModal" data-slug="domestic-violence-act-2005">
+                            <span>View Full Guide & Filing Steps</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+
+                    <!-- Right 4: Maternity Benefit Act -->
+                    <article class="rights-card" data-category="workplace">
+                        <div class="rights-card-header">
+                            <span class="tag-category">Workplace</span>
+                            <div class="card-header-actions">
+                                <button type="button" class="btn-bookmark" data-type="right" data-slug="maternity-benefit-act" title="Save to Bookmarks" aria-label="Save this legal right">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                                <button type="button" class="btn-read-aloud"
+                                    data-speak="Maternity Benefit Act. Provides 26 weeks of paid maternity leave for up to two surviving children. Employers cannot dismiss or terminate a woman during her leave."
+                                    title="Read this right aloud">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="rights-title">Maternity Benefit Act (Amendment 2017)</h3>
+                        <p class="rights-summary">
+                            Guarantees 26 weeks (6 months) of paid leave for pregnant working women. Prohibits dismissal
+                            during pregnancy and mandates crèche facilities in establishments with 50+ workers.
+                        </p>
+                        <div class="rights-points">
+                            <span><i class="fa-solid fa-check"></i> Full salary payment during the 26 weeks</span>
+                            <span><i class="fa-solid fa-check"></i> Work-from-home options upon mutual agreement</span>
+                            <span><i class="fa-solid fa-check"></i> Crèche access visits up to 4 times a day</span>
+                        </div>
+                        <button type="button" class="rights-details-btn" data-modal="maternityModal" data-slug="maternity-benefit-act">
+                            <span>View Full Guide & Filing Steps</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+
+                    <!-- Right 5: Property & Hindu Succession Act -->
+                    <article class="rights-card" data-category="property">
+                        <div class="rights-card-header">
+                            <span class="tag-category">Property & Finance</span>
+                            <div class="card-header-actions">
+                                <button type="button" class="btn-bookmark" data-type="right" data-slug="coparcenary-property-rights" title="Save to Bookmarks" aria-label="Save this legal right">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                                <button type="button" class="btn-read-aloud"
+                                    data-speak="Equal Coparcenary Property Rights. Supreme Court confirmed in 2020 that daughters have equal coparcenary rights by birth in ancestral property, identical to sons."
+                                    title="Read this right aloud">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="rights-title">Equal Coparcenary Property Inheritance Rights</h3>
+                        <p class="rights-summary">
+                            Following the landmark Supreme Court ruling (2020) under Hindu Succession Act, daughters
+                            have an unconditional equal birthright to ancestral property, on par with sons.
+                        </p>
+                        <div class="rights-points">
+                            <span><i class="fa-solid fa-check"></i> Applies regardless of whether father was alive in
+                                2005</span>
+                            <span><i class="fa-solid fa-check"></i> Full rights over Stridhan (gifts, jewelry &
+                                self-acquired)</span>
+                            <span><i class="fa-solid fa-check"></i> Equal right to demand partition in ancestral
+                                assets</span>
+                        </div>
+                        <button type="button" class="rights-details-btn" data-modal="propertyModal" data-slug="coparcenary-property-rights">
+                            <span>View Full Guide & Filing Steps</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+
+                    <!-- Right 6: Right to Free Legal Aid (NALSA) -->
+                    <article class="rights-card" data-category="safety">
+                        <div class="rights-card-header">
+                            <span class="tag-category">Judicial Access</span>
+                            <div class="card-header-actions">
+                                <button type="button" class="btn-bookmark" data-type="right" data-slug="nalsa-free-legal-aid" title="Save to Bookmarks" aria-label="Save this legal right">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                                <button type="button" class="btn-read-aloud"
+                                    data-speak="Right to Free Legal Aid under Legal Services Authorities Act. Every woman in India, regardless of financial income, is entitled to free legal counsel and court fee exemptions."
+                                    title="Read this right aloud">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="rights-title">Right to Free Legal Aid (Section 12, NALSA Act)</h3>
+                        <p class="rights-summary">
+                            Section 12(c) of the Legal Services Authorities Act provides that <em>all women</em> are
+                            unconditionally eligible for free government legal services, irrespective of their annual
+                            income.
+                        </p>
+                        <div class="rights-points">
+                            <span><i class="fa-solid fa-check"></i> Free court advocate appointed at no expense</span>
+                            <span><i class="fa-solid fa-check"></i> Exemption from court drafting and filing fees</span>
+                            <span><i class="fa-solid fa-check"></i> Available from Taluk level to Supreme Court</span>
+                        </div>
+                        <button type="button" class="rights-details-btn" data-modal="nalsaModal" data-slug="nalsa-free-legal-aid">
+                            <span>View Full Guide & Filing Steps</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: GOVERNMENT SCHEMES & OPPORTUNITIES -->
+        <section class="section-padding bg-blush" id="opportunities">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">National Initiatives</span>
+                    <h2 class="section-title">Government Schemes & Opportunities</h2>
+                    <p class="section-subtitle">
+                        Curated and verified financial, maternal, entrepreneurial and educational support schemes by the
+                        Government of India.
+                    </p>
+                </div>
+
+                <div class="schemes-grid">
+                    <!-- Scheme 1: Beti Bachao Beti Padhao -->
+                    <div class="scheme-card">
+                        <div class="scheme-top">
+                            <span class="scheme-pill">Girl Child Welfare</span>
+                            <span class="scheme-ministry">Ministry of WCD</span>
+                        </div>
+                        <h3 class="scheme-name">Beti Bachao Beti Padhao (BBBP)</h3>
+                        <p class="scheme-desc">
+                            National flagship scheme focused on survival, protection, and education of girl children,
+                            coupled with high-interest Sukanya Samriddhi Yojana (SSY) savings accounts.
+                        </p>
+                        <div class="scheme-features">
+                            <div class="feature-line"><i class="fa-solid fa-coins"></i> <strong>Interest:</strong> Up to
+                                8.2% tax-free under SSY</div>
+                            <div class="feature-line"><i class="fa-solid fa-calendar-check"></i>
+                                <strong>Eligibility:</strong> Girls from birth up to 10 years</div>
+                            <div class="feature-line"><i class="fa-solid fa-building-columns"></i>
+                                <strong>Where:</strong> Post Offices & National Banks</div>
+                        </div>
+                        <div class="scheme-actions">
+                            <button type="button" class="btn btn-outline-scheme" data-scheme="bbbp">Check Eligibility &
+                                Steps</button>
+                        </div>
+                    </div>
+
+                    <!-- Scheme 2: Stand-Up India -->
+                    <div class="scheme-card">
+                        <div class="scheme-top">
+                            <span class="scheme-pill">Entrepreneurship</span>
+                            <span class="scheme-ministry">Ministry of Finance</span>
+                        </div>
+                        <h3 class="scheme-name">Stand-Up India Scheme</h3>
+                        <p class="scheme-desc">
+                            Facilitates bank loans between ₹10 Lakh and ₹1 Crore to at least one woman borrower per bank
+                            branch for setting up greenfield manufacturing, service, or trading enterprises.
+                        </p>
+                        <div class="scheme-features">
+                            <div class="feature-line"><i class="fa-solid fa-sack-dollar"></i> <strong>Funding:</strong>
+                                ₹10,00,000 to ₹1,00,00,000</div>
+                            <div class="feature-line"><i class="fa-solid fa-bullseye"></i> <strong>Purpose:</strong> New
+                                greenfield businesses</div>
+                            <div class="feature-line"><i class="fa-solid fa-handshake"></i> <strong>Repayment:</strong>
+                                Up to 7 years with moratorium</div>
+                        </div>
+                        <div class="scheme-actions">
+                            <button type="button" class="btn btn-outline-scheme" data-scheme="standup">Check Eligibility
+                                & Steps</button>
+                        </div>
+                    </div>
+
+                    <!-- Scheme 3: PMMVY -->
+                    <div class="scheme-card">
+                        <div class="scheme-top">
+                            <span class="scheme-pill">Maternal Health</span>
+                            <span class="scheme-ministry">Ministry of WCD</span>
+                        </div>
+                        <h3 class="scheme-name">Pradhan Mantri Matru Vandana Yojana</h3>
+                        <p class="scheme-desc">
+                            Direct Benefit Transfer (DBT) cash incentive of ₹5,000 to ₹6,000 directly into the bank
+                            accounts of pregnant and lactating mothers for health checkups, nutrition, and institutional
+                            delivery.
+                        </p>
+                        <div class="scheme-features">
+                            <div class="feature-line"><i class="fa-solid fa-money-bill-wave"></i>
+                                <strong>Benefit:</strong> ₹5,000 in DBT instalments</div>
+                            <div class="feature-line"><i class="fa-solid fa-person-breastfeeding"></i>
+                                <strong>Target:</strong> Pregnant & Lactating Mothers</div>
+                            <div class="feature-line"><i class="fa-solid fa-hospital-user"></i> <strong>Where:</strong>
+                                Anganwadi / Health Centres</div>
+                        </div>
+                        <div class="scheme-actions">
+                            <button type="button" class="btn btn-outline-scheme" data-scheme="pmmvy">Check Eligibility &
+                                Steps</button>
+                        </div>
+                    </div>
+
+                    <!-- Scheme 4: Mahila E-Haat & Udyam Sakhi -->
+                    <div class="scheme-card">
+                        <div class="scheme-top">
+                            <span class="scheme-pill">Digital Commerce</span>
+                            <span class="scheme-ministry">Ministry of MSME</span>
+                        </div>
+                        <h3 class="scheme-name">Udyam Sakhi & Mahila Co-op Grants</h3>
+                        <p class="scheme-desc">
+                            Dedicated portal and financial schemes encouraging women entrepreneurs, Self-Help Groups
+                            (SHGs), and micro-enterprises with subsidized loans, training, and direct market linkage.
+                        </p>
+                        <div class="scheme-features">
+                            <div class="feature-line"><i class="fa-solid fa-shop"></i> <strong>Support:</strong>
+                                Zero-fee business registration</div>
+                            <div class="feature-line"><i class="fa-solid fa-percent"></i> <strong>Loan Subsidy:</strong>
+                                Low-interest collateral support</div>
+                            <div class="feature-line"><i class="fa-solid fa-users"></i> <strong>Beneficiaries:</strong>
+                                Artisans, SHGs, Solopreneurs</div>
+                        </div>
+                        <div class="scheme-actions">
+                            <button type="button" class="btn btn-outline-scheme" data-scheme="udyam">Check Eligibility &
+                                Steps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCHOLARSHIPS SUB-ROW -->
+                <div class="scholarships-section" id="education">
+                    <div class="sub-heading-box text-center">
+                        <h3 class="sub-title"><i class="fa-solid fa-graduation-cap"></i> Verified Higher Education
+                            Scholarships for Girls</h3>
+                        <p>Direct academic funding to encourage female leadership in engineering, medicine, arts and
+                            research.</p>
+                    </div>
+
+                    <div class="scholarship-cards-grid">
+                        <div class="scholarship-item">
+                            <div class="sch-badge">AICTE Govt Grant</div>
+                            <h4>PRAGATI Scholarship for Girls</h4>
+                            <p>₹50,000 per annum for girls pursuing technical degree/diploma courses in AICTE approved
+                                institutions.</p>
+                            <div class="sch-meta">
+                                <span><i class="fa-solid fa-user-check"></i> 10,000 scholarships/year</span>
+                                <span><i class="fa-solid fa-calendar-day"></i> National Scholarship Portal</span>
+                            </div>
+                        </div>
+
+                        <div class="scholarship-item">
+                            <div class="sch-badge">STEM Leader</div>
+                            <h4>Adobe India Women-in-Technology</h4>
+                            <p>Mentorship, tuition fees, and summer internship opportunity for female students enrolled
+                                in computer science degrees.</p>
+                            <div class="sch-meta">
+                                <span><i class="fa-solid fa-laptop"></i> Engineering & Technology</span>
+                                <span><i class="fa-solid fa-award"></i> Full Tuition + Mentorship</span>
+                            </div>
+                        </div>
+
+                        <div class="scholarship-item">
+                            <div class="sch-badge">Science & Research</div>
+                            <h4>L'Oréal India For Young Women in Science</h4>
+                            <p>₹2,50,000 educational grant for young women from economically underprivileged backgrounds
+                                to pursue graduation in science.</p>
+                            <div class="sch-meta">
+                                <span><i class="fa-solid fa-flask"></i> Science Streams</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹2.5 Lakh Grant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: WOMEN SAFETY AND SUPPORT -->
+        <section class="section-padding bg-pastel-mint" id="safety">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">24x7 Protection</span>
+                    <h2 class="section-title">Women Safety & Emergency Directory</h2>
+                    <p class="section-subtitle">
+                        Reliable, verified Indian helplines and safety protocols. Click any number to initiate an
+                        immediate direct phone call.
+                    </p>
+                </div>
+
+                <!-- Emergency Helplines Callout Box -->
+                <div class="helplines-grid">
+                    <!-- 112 -->
+                    <a href="tel:112" class="helpline-card card-urgent">
+                        <div class="h-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                        <div class="h-body">
+                            <span class="h-number">112</span>
+                            <h4 class="h-name">National Emergency Response (ERSS)</h4>
+                            <p class="h-desc">Pan-India single emergency number for Police, Fire, and Ambulance
+                                assistance.</p>
+                        </div>
+                        <div class="h-call-action">
+                            <span>Call Now</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+
+                    <!-- 1091 -->
+                    <a href="tel:1091" class="helpline-card">
+                        <div class="h-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="h-body">
+                            <span class="h-number">1091</span>
+                            <h4 class="h-name">National Women Helpline (Police)</h4>
+                            <p class="h-desc">Dedicated police control line for women experiencing immediate distress or
+                                threat.</p>
+                        </div>
+                        <div class="h-call-action">
+                            <span>Call Now</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+
+                    <!-- 181 -->
+                    <a href="tel:181" class="helpline-card">
+                        <div class="h-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <div class="h-body">
+                            <span class="h-number">181</span>
+                            <h4 class="h-name">Women Helpline (Dispute & Distress)</h4>
+                            <p class="h-desc">24/7 toll-free support providing counselling, shelter referral and legal
+                                advice.</p>
+                        </div>
+                        <div class="h-call-action">
+                            <span>Call Now</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+
+                    <!-- 1930 -->
+                    <a href="tel:1930" class="helpline-card">
+                        <div class="h-icon"><i class="fa-solid fa-lock"></i></div>
+                        <div class="h-body">
+                            <span class="h-number">1930</span>
+                            <h4 class="h-name">Cyber Crime Reporting Helpline</h4>
+                            <p class="h-desc">Reporting online harassment, morphing, stalking, and cyber financial
+                                fraud.</p>
+                        </div>
+                        <div class="h-call-action">
+                            <span>Call Now</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Sakhi One-Stop Centres & Safety Toolkit -->
+                <div class="safety-tools-row">
+                    <div class="safety-card sakhi-card">
+                        <div class="safety-card-icon"><i class="fa-solid fa-building-shield"></i></div>
+                        <h3>Sakhi – One Stop Centres (OSC)</h3>
+                        <p>
+                            Centrally sponsored scheme establishing One-Stop Centres across all 700+ Indian districts
+                            providing medical aid, police facilitation, psycho-social counselling, and temporary 5-day
+                            emergency shelter under one roof.
+                        </p>
+                        <div class="osc-finder">
+                            <label for="stateSelect" class="sr-only">Choose State</label>
+                            <select id="stateSelect" class="form-select">
+                                <option value="">Select your state to find local centre...</option>
+                                <option value="delhi">Delhi NCT</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="tamilnadu">Tamil Nadu</option>
+                                <option value="up">Uttar Pradesh</option>
+                                <option value="bengal">West Bengal</option>
+                                <option value="telangana">Telangana</option>
+                                <option value="gujarat">Gujarat</option>
+                            </select>
+                            <div id="oscResult" class="osc-result-box" style="display:none;"></div>
+                        </div>
+                    </div>
+
+                    <div class="safety-card digital-safety-card">
+                        <div class="safety-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>Digital Safety & Evidence Checklist</h3>
+                        <p>If you or someone you know faces digital harassment or abuse, follow these immediate
+                            precautionary steps:</p>
+                        <ul class="safety-steps">
+                            <li><i class="fa-solid fa-camera"></i> <strong>Take Screenshots:</strong> Preserve URLs,
+                                timestamps, handles, and chat context.</li>
+                            <li><i class="fa-solid fa-ban"></i> <strong>Do Not Delete Chats:</strong> Crucial forensic
+                                evidence for Section 66E / 67 IT Act complaints.</li>
+                            <li><i class="fa-solid fa-fingerprint"></i> <strong>File at cybercrime.gov.in:</strong>
+                                Anonymized portal for reporting morphing or deepfakes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="safety-disclaimer">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Notice: In an ongoing life-threatening emergency, please dial <strong>112</strong>
+                        immediately. AYRA is an informational resource and does not operate an independent police
+                        dispatch service.</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: MULTILINGUAL VOICE ASSISTANT (AYRA VOICE) -->
+        <section class="section-padding bg-peach" id="voice">
+            <div class="container">
+                <div class="voice-assistant-container">
+                    <div class="voice-header-box text-center">
+                        <span class="section-tag">Hands-Free Vernacular Help</span>
+                        <h2 class="section-title">AYRA Multilingual Voice Assistant</h2>
+                        <p class="section-subtitle">
+                            Speak or listen to your rights and government benefits in your mother tongue. Powered by
+                            browser speech synthesis for seamless accessibility.
+                        </p>
+                    </div>
+
+                    <div class="voice-widget-card">
+                        <div class="voice-widget-top">
+                            <div class="assistant-status">
+                                <span class="status-pulse" id="voicePulse"></span>
+                                <span id="voiceStatusText">AYRA Voice Ready</span>
+                            </div>
+                            <div class="assistant-lang-pick">
+                                <label for="voiceLangSelect"><i class="fa-solid fa-earth-asia"></i> Language:</label>
+                                <select id="voiceLangSelect" class="form-select-sm">
+                                    <option value="en-IN" selected>English (India)</option>
+                                    <option value="hi-IN">हिंदी (Hindi)</option>
+                                    <option value="ta-IN">தமிழ் (Tamil)</option>
+                                    <option value="te-IN">తెలుగు (Telugu)</option>
+                                    <option value="bn-IN">বাংলা (Bengali)</option>
+                                    <option value="mr-IN">मराठी (Marathi)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Speech Wave Visualizer Simulation -->
+                        <div class="voice-visualizer" id="voiceVisualizer" aria-hidden="true">
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                            <span class="v-bar"></span>
+                        </div>
+
+                        <!-- Assistant Interactive Screen -->
+                        <div class="voice-display-screen" id="voiceDisplayScreen">
+                            <div class="assistant-msg">
+                                <div class="msg-avatar"><i class="fa-solid fa-sparkles"></i></div>
+                                <div class="msg-bubble" id="assistantBubble">
+                                    "Namaste! I am AYRA Voice. Tap any question below or click the microphone to ask
+                                    about maternity leave, workplace harassment, scholarships, or emergency safety."
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Voice Prompts (Click to Listen) -->
+                        <div class="voice-quick-prompts">
+                            <span class="prompt-hint">Tap to ask & listen aloud:</span>
+                            <div class="prompts-flex">
+                                <button type="button" class="voice-prompt-chip"
+                                    data-answer-en="Under the Maternity Benefit Act 2017, women in establishments with 10 or more employees are entitled to 26 weeks of fully paid maternity leave for up to two children. Employers cannot legally terminate you while pregnant."
+                                    data-answer-hi="मातृत्व लाभ अधिनियम 2017 के तहत, कामकाजी महिलाओं को 26 सप्ताह का सवैतनिक मातृत्व अवकाश पाने का कानूनी अधिकार है। गर्भावस्था के दौरान नौकरी से निकालना गैरकानूनी है।">
+                                    <i class="fa-solid fa-volume-high"></i> "What are my maternity leave rights?"
+                                </button>
+                                <button type="button" class="voice-prompt-chip"
+                                    data-answer-en="A Zero FIR can be filed at any police station across India regardless of where the incident occurred. Police cannot refuse to register it under Section 154 CrPC."
+                                    data-answer-hi="ज़ीरो एफ़आईआर भारत के किसी भी पुलिस स्टेशन में दर्ज की जा सकती है, चाहे घटना कहीं भी हुई हो। पुलिस इसे दर्ज करने से मना नहीं कर सकती।">
+                                    <i class="fa-solid fa-volume-high"></i> "How do I file a Zero FIR?"
+                                </button>
+                                <button type="button" class="voice-prompt-chip"
+                                    data-answer-en="Girls can apply for the AICTE Pragati Scholarship providing 50,000 rupees annually, and Adobe Women-in-Technology grants on the National Scholarship Portal."
+                                    data-answer-hi="बेटियों के लिए एआईसीटीई प्रगति स्कॉलरशिप 50,000 रुपये प्रति वर्ष की सहायता देती है। इसके आवेदन राष्ट्रीय छात्रवृत्ति पोर्टल पर उपलब्ध हैं।">
+                                    <i class="fa-solid fa-volume-high"></i> "What scholarships are open for girls?"
+                                </button>
+                                <button type="button" class="voice-prompt-chip"
+                                    data-answer-en="For immediate police help call 112 or 1091. For women distress and counselling call 181. For cyber fraud or online harassment call 1930."
+                                    data-answer-hi="आपातकालीन पुलिस सहायता के लिए 112 या 1091 डायल करें। घरेलू संकट के लिए 181 और साइबर अपराध के लिए 1930 पर कॉल करें।">
+                                    <i class="fa-solid fa-volume-high"></i> "What are the emergency helplines?"
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Voice Controls Bar -->
+                        <div class="voice-controls-bar">
+                            <div class="custom-ask-wrap">
+                                <input type="text" id="voiceCustomInput" class="voice-text-input"
+                                    placeholder="Type a question or click speak...">
+                                <button type="button" class="btn-voice-send" id="btnVoiceSend" aria-label="Send query">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+
+                            <div class="voice-action-buttons">
+                                <button type="button" class="btn-mic" id="btnMicTrigger"
+                                    aria-label="Speak using microphone" title="Click to speak">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </button>
+                                <button type="button" class="btn-stop-audio" id="btnStopAudio"
+                                    aria-label="Stop audio speech" title="Stop speech">
+                                    <i class="fa-solid fa-circle-stop"></i>
+                                    <span>Stop Speech</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: COMMUNITY AND WORKSHOPS -->
+        <section class="section-padding bg-warm-cream" id="community">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Sisterhood & Skill-Building</span>
+                    <h2 class="section-title">Community & Empowerment Workshops</h2>
+                    <p class="section-subtitle">
+                        Free interactive masterclasses, legal clinics, and financial literacy workshops conducted by
+                        certified women advocates and industry leaders.
+                    </p>
+                </div>
+
+                <div class="workshops-grid">
+                    <!-- Workshop 1 -->
+                    <article class="workshop-card">
+                        <div class="workshop-tag-date">
+                            <span class="w-month">NOV</span>
+                            <span class="w-day">14</span>
+                        </div>
+                        <div class="workshop-details">
+                            <div class="workshop-meta-bar">
+                                <span class="w-mode"><i class="fa-solid fa-video"></i> Online Zoom Masterclass</span>
+                                <span class="w-seats"><i class="fa-solid fa-user-group"></i> 24 Seats Left</span>
+                            </div>
+                            <h3 class="w-title">Financial Autonomy: Mutual Funds, SIPs & Gold Bonds for Women</h3>
+                            <p class="w-desc">
+                                Learn how to invest independently, understand risk-reward, file your taxes, and build an
+                                emergency fund without relying on intermediaries.
+                            </p>
+                            <div class="w-speaker">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                <span>Mentor: <strong>Pooja Srinivasan, CFA</strong> (Wealth Educator)</span>
+                            </div>
+                            <div class="w-bottom">
+                                <span class="w-price">Free Registration</span>
+                                <button type="button" class="btn btn-sm btn-primary btn-register-workshop"
+                                    data-slug="financial-autonomy-sips"
+                                    data-title="Financial Autonomy: Mutual Funds, SIPs & Gold Bonds"
+                                    data-date="Nov 14, 2026 • 5:00 PM IST">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Workshop 2 -->
+                    <article class="workshop-card">
+                        <div class="workshop-tag-date">
+                            <span class="w-month">NOV</span>
+                            <span class="w-day">21</span>
+                        </div>
+                        <div class="workshop-details">
+                            <div class="workshop-meta-bar">
+                                <span class="w-mode"><i class="fa-solid fa-video"></i> Interactive Legal Clinic</span>
+                                <span class="w-seats"><i class="fa-solid fa-user-group"></i> 18 Seats Left</span>
+                            </div>
+                            <h3 class="w-title">Demystifying POSH: Your Rights in Corporate & Startup Workplaces</h3>
+                            <p class="w-desc">
+                                Step-by-step guidance on how to report sexual harassment, document incidents, approach
+                                the Internal Committee (IC), and protect your career.
+                            </p>
+                            <div class="w-speaker">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <span>Speaker: <strong>Adv. Meenakshi Roy</strong> (High Court Advocate)</span>
+                            </div>
+                            <div class="w-bottom">
+                                <span class="w-price">Free Registration</span>
+                                <button type="button" class="btn btn-sm btn-primary btn-register-workshop"
+                                    data-slug="demystifying-posh-workplace"
+                                    data-title="Demystifying POSH: Your Rights in Corporate Workplaces"
+                                    data-date="Nov 21, 2026 • 6:30 PM IST">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Workshop 3 -->
+                    <article class="workshop-card">
+                        <div class="workshop-tag-date">
+                            <span class="w-month">NOV</span>
+                            <span class="w-day">28</span>
+                        </div>
+                        <div class="workshop-details">
+                            <div class="workshop-meta-bar">
+                                <span class="w-mode"><i class="fa-solid fa-video"></i> Digital Safety Lab</span>
+                                <span class="w-seats"><i class="fa-solid fa-user-group"></i> 30 Seats Left</span>
+                            </div>
+                            <h3 class="w-title">Cyber Self-Defense: Protecting Identity & Handling Online Abuse</h3>
+                            <p class="w-desc">
+                                Hands-on workshop on securing social media profiles, detecting spyware, handling
+                                deepfake threats, and lodging swift cybercrime complaints.
+                            </p>
+                            <div class="w-speaker">
+                                <i class="fa-solid fa-shield-cat"></i>
+                                <span>Mentor: <strong>Dr. Ananya Verma</strong> (Cyber Intelligence Specialist)</span>
+                            </div>
+                            <div class="w-bottom">
+                                <span class="w-price">Free Registration</span>
+                                <button type="button" class="btn btn-sm btn-primary btn-register-workshop"
+                                    data-slug="cyber-self-defense-identity"
+                                    data-title="Cyber Self-Defense: Protecting Identity & Handling Online Abuse"
+                                    data-date="Nov 28, 2026 • 4:00 PM IST">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Community Highlights -->
+                <div class="community-banner">
+                    <div class="c-content">
+                        <h3>Join AYRA Peer Circles & Volunteer Network</h3>
+                        <p>Connect with 15,000+ members in safe, moderated discussion forums covering legal queries,
+                            career transitions, parenting support, and entrepreneurship.</p>
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="btnJoinCircle">
+                        <i class="fa-solid fa-users"></i> Join Verified Community
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: MARKETPLACE (AYRA CARE & ARTISANS) -->
+        <section class="section-padding bg-blush" id="marketplace">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Ethical & Empowering</span>
+                    <h2 class="section-title">AYRA CARE & Artisan Marketplace</h2>
+                    <p class="section-subtitle">
+                        Every purchase directly supports rural women self-help groups (SHGs), master weavers, and
+                        personal safety gear essentials.
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-id="p1" data-name="Pochampally Handloom Dupatta" data-price="1250">
+                        <div class="product-badge">Telangana SHG</div>
+                        <div class="product-visual">
+                            <div class="product-icon-art art-dupatta">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-cat">Handcrafted Apparel</span>
+                            <h3 class="product-name">Pochampally Handwoven Cotton Dupatta</h3>
+                            <p class="product-shg">Crafted by weavers of Pochampally Women Collective.</p>
+                            <div class="product-price-row">
+                                <div class="price-val">₹1,250</div>
+                                <button type="button" class="btn btn-add-cart"
+                                    aria-label="Add Pochampally Dupatta to Cart">
+                                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-id="p2" data-name="Safety Alarm & Pepper Spray Kit" data-price="699">
+                        <div class="product-badge safety-tag">Safety Essential</div>
+                        <div class="product-visual">
+                            <div class="product-icon-art art-safety">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-cat">Personal Protection</span>
+                            <h3 class="product-name">130dB Siren Alarm & Pepper Spray Combo</h3>
+                            <p class="product-shg">High-decibel emergency siren keychain with UV-marking dye spray.</p>
+                            <div class="product-price-row">
+                                <div class="price-val">₹699</div>
+                                <button type="button" class="btn btn-add-cart" aria-label="Add Safety Kit to Cart">
+                                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-id="p3" data-name="Organic Kahwa Green Tea" data-price="450">
+                        <div class="product-badge">Kashmir Women's Coop</div>
+                        <div class="product-visual">
+                            <div class="product-icon-art art-tea">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-cat">Wellness & Nutrition</span>
+                            <h3 class="product-name">Himalayan Saffron & Cardamom Kahwa (100g)</h3>
+                            <p class="product-shg">Naturally harvested by Kashmiri female farmers cooperative.</p>
+                            <div class="product-price-row">
+                                <div class="price-val">₹450</div>
+                                <button type="button" class="btn btn-add-cart" aria-label="Add Kahwa Tea to Cart">
+                                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-id="p4" data-name="Madhubani Hand-Painted Journal" data-price="550">
+                        <div class="product-badge">Bihar Rural Artisans</div>
+                        <div class="product-visual">
+                            <div class="product-icon-art art-journal">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-cat">Stationery & Art</span>
+                            <h3 class="product-name">Madhubani Tree of Life Handmade Journal</h3>
+                            <p class="product-shg">Recycled handmade cotton paper bound with natural dyes.</p>
+                            <div class="product-price-row">
+                                <div class="price-val">₹550</div>
+                                <button type="button" class="btn btn-add-cart"
+                                    aria-label="Add Madhubani Journal to Cart">
+                                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marketplace-note">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <span>100% Fair Trade: 90% of proceeds go directly to artisan accounts. Shipping across all pincodes
+                        in India.</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: CONTACT & GET IN TOUCH -->
+        <section class="section-padding bg-lavender" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-col">
+                        <span class="section-tag">Get in Touch</span>
+                        <h2 class="section-title">Reach Out to the AYRA Secretariat</h2>
+                        <p class="section-subtitle">
+                            Have questions regarding legal rights, partnership opportunities, or institutional
+                            assistance? We are here to listen and help.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="c-method-item">
+                                <div class="c-method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <strong>National Office</strong>
+                                    <p>AYRA Foundation Center, Connaught Place, New Delhi 110001, India</p>
+                                </div>
+                            </div>
+
+                            <div class="c-method-item">
+                                <div class="c-method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <strong>Direct Email Support</strong>
+                                    <p><a href="mailto:support@ayra-empowerment.org">support@ayra-empowerment.org</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="c-method-item">
+                                <div class="c-method-icon"><i class="fa-solid fa-headset"></i></div>
+                                <div>
+                                    <strong>AYRA Advisory Desk</strong>
+                                    <p>Mon - Sat, 9:00 AM – 6:00 PM IST (Toll-Free Helpline)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-col">
+                        <div class="contact-form-card">
+                            <h3>Send Us a Confidential Message</h3>
+                            <p class="form-instruction">Your privacy and data are rigorously protected under our ethics
+                                pledge.</p>
+
+                            <form id="contactForm" novalidate>
+                                <div class="form-group">
+                                    <label for="contactName">Your Name / Pseudonym <span
+                                            class="required">*</span></label>
+                                    <input type="text" id="contactName" class="form-control"
+                                        placeholder="e.g. Priya Sharma (or Anonymous)" required>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contactEmail">Email Address <span class="required">*</span></label>
+                                        <input type="email" id="contactEmail" class="form-control"
+                                            placeholder="name@example.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactPhone">Phone (Optional)</label>
+                                        <input type="tel" id="contactPhone" class="form-control"
+                                            placeholder="+91 XXXXX XXXXX">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactSubject">Topic / Inquiry Category <span
+                                            class="required">*</span></label>
+                                    <select id="contactSubject" class="form-control" required>
+                                        <option value="">Select an area...</option>
+                                        <option value="rights">Legal Rights Guidance</option>
+                                        <option value="schemes">Government Scheme Help</option>
+                                        <option value="workshops">Workshop Inquiry</option>
+                                        <option value="ngo">NGO / Institutional Partnership</option>
+                                        <option value="other">General Feedback</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage">Your Message <span class="required">*</span></label>
+                                    <textarea id="contactMessage" rows="4" class="form-control"
+                                        placeholder="Tell us how we can assist you..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full" id="btnSubmitContact">
+                                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <span class="f-logo">AYRA</span>
+                        <span class="f-tagline">Her Voice. Her Rights. Her Rise.</span>
+                    </div>
+                    <p class="footer-about">
+                        A nationwide empowerment portal dedicated to enabling constitutional literacy, higher education,
+                        career dignity, and uncompromising personal safety for every woman in India.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About AYRA</a></li>
+                        <li><a href="#rights">Know Your Rights</a></li>
+                        <li><a href="#opportunities">Scholarships & Schemes</a></li>
+                        <li><a href="#safety">Women Safety Directory</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Pillars & Portals</h4>
+                    <ul class="footer-links">
+                        <li><a href="#voice">Voice Assistant (Vernacular)</a></li>
+                        <li><a href="#community">Workshops & Circles</a></li>
+                        <li><a href="#marketplace">Artisan Marketplace</a></li>
+                        <li><a href="https://wcd.nic.in" target="_blank" rel="noopener">Ministry of WCD</a></li>
+                        <li><a href="https://nalsa.gov.in" target="_blank" rel="noopener">NALSA Legal Aid</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Emergency & Support</h4>
+                    <ul class="footer-helpline-list">
+                        <li><strong>112</strong> — National Police & Fire</li>
+                        <li><strong>1091</strong> — National Women Helpline</li>
+                        <li><strong>181</strong> — Domestic Distress Helpline</li>
+                        <li><strong>1098</strong> — Childline Helpline</li>
+                        <li><strong>1930</strong> — Cyber Crime Reporting</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    &copy; <span id="currentYear"></span> AYRA Foundation. Empowering women across India. All Rights
+                    Reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="privacy-badge"><i class="fa-solid fa-lock"></i> 256-bit Secure</span>
+                    <span class="privacy-badge"><i class="fa-solid fa-universal-access"></i> Accessible (WCAG 2.1)</span>
+                    <button type="button" class="privacy-badge db-status-badge" id="dbStatusBadge" title="Click to test Supabase connection" style="cursor: pointer; background: rgba(255, 255, 255, 0.12); padding: 0.25rem 0.65rem; border-radius: 99px; font-size: 0.78rem; color: #FFF; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.2s ease;">
+                        <i class="fa-solid fa-database"></i> <span id="dbStatusLabel">Database: Checking...</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: GET IMMEDIATE SUPPORT / HELPLINE HUB -->
+    <div class="modal-backdrop" id="supportModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header header-urgent">
+                <div class="modal-title-wrap">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>AYRA Support Hub</h3>
+                </div>
+                <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-intro">
+                    If you are in distress or need legal, medical, or counselling support, please connect with these
+                    verified government and national support hotlines:
+                </p>
+                <div class="quick-dial-list">
+                    <a href="tel:112" class="quick-dial-item item-emergency">
+                        <div>
+                            <strong>112 — National Emergency</strong>
+                            <small>Immediate police response and physical protection</small>
+                        </div>
+                        <span class="dial-chip"><i class="fa-solid fa-phone"></i> Dial 112</span>
+                    </a>
+                    <a href="tel:1091" class="quick-dial-item">
+                        <div>
+                            <strong>1091 — Women Helpline</strong>
+                            <small>Dedicated 24/7 police cell for women in distress</small>
+                        </div>
+                        <span class="dial-chip"><i class="fa-solid fa-phone"></i> Dial 1091</span>
+                    </a>
+                    <a href="tel:181" class="quick-dial-item">
+                        <div>
+                            <strong>181 — Toll-Free Women in Crisis</strong>
+                            <small>Counselling, legal advice, shelter referrals</small>
+                        </div>
+                        <span class="dial-chip"><i class="fa-solid fa-phone"></i> Dial 181</span>
+                    </a>
+                    <a href="tel:1930" class="quick-dial-item">
+                        <div>
+                            <strong>1930 — National Cyber Crime</strong>
+                            <small>Immediate freeze & reporting for online harassment/fraud</small>
+                        </div>
+                        <span class="dial-chip"><i class="fa-solid fa-phone"></i> Dial 1930</span>
+                    </a>
+                </div>
+                <div class="support-modal-foot">
+                    <p><i class="fa-solid fa-shield"></i> You are not alone. Assistance is confidential, prompt, and
+                        unconditionally protected under Indian law.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: RIGHT DETAIL MODAL (DYNAMIC CONTENT) -->
+    <div class="modal-backdrop" id="rightsDetailModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <i class="fa-solid fa-scale-balanced" id="rightModalIcon"></i>
+                    <h3 id="rightModalTitle">Legal Right Guide</h3>
+                </div>
+                <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body" id="rightModalBody">
+                <!-- Injected via JavaScript based on clicked card -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: WORKSHOP REGISTRATION DEMO -->
+    <div class="modal-backdrop" id="workshopModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h3>Free Workshop Registration</h3>
+                </div>
+                <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="workshop-selected-info" id="workshopSelectedInfo">
+                    <strong id="wModalTitle">Financial Autonomy: Mutual Funds, SIPs & Gold Bonds</strong>
+                    <small id="wModalDate">Nov 14, 2026 • 5:00 PM IST</small>
+                </div>
+
+                <form id="workshopForm" class="modal-form">
+                    <div class="form-group">
+                        <label for="wName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="wName" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="wEmail">Email Address (for Zoom Link) <span class="required">*</span></label>
+                        <input type="email" id="wEmail" class="form-control" placeholder="you@domain.com" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="wPhone">Mobile Number <span class="required">*</span></label>
+                            <input type="tel" id="wPhone" class="form-control" placeholder="10-digit mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="wCity">City / State <span class="required">*</span></label>
+                            <input type="text" id="wCity" class="form-control" placeholder="e.g. Pune" required>
+                        </div>
+                    </div>
+                    <p class="form-disclaimer"><i class="fa-solid fa-circle-info"></i> Interactive demo: A simulated
+                        pass will be generated instantly for your preview.</p>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fa-solid fa-ticket"></i> Confirm Free Registration
+                    </button>
+                </form>
+
+                <div class="registration-success-card" id="workshopSuccessCard" style="display:none;">
+                    <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4>Pass Confirmed (Demo Preview)</h4>
+                    <p>Thank you, <strong id="successName">Attendee</strong>! Your demonstration ticket has been
+                        generated.</p>
+                    <div class="ticket-stub">
+                        <span class="ticket-code">AYRA-PASS-2026</span>
+                        <span class="ticket-details" id="successDetails">Session details confirmed</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- OFFCANVAS CART DRAWER -->
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <div class="cart-title">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span>Your AYRA CARE Basket</span>
+            </div>
+            <button type="button" class="drawer-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-drawer-body" id="cartItemsList">
+            <div class="empty-cart-state" id="emptyCartState">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Your basket is currently empty.</p>
+                <a href="#marketplace" class="btn btn-secondary btn-sm" id="btnBrowseMarketplace">Browse Artisan
+                    Crafts</a>
+            </div>
+        </div>
+        <div class="cart-drawer-footer" id="cartFooter">
+            <div class="cart-subtotal-row">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">₹0</strong>
+            </div>
+            <p class="cart-note"><i class="fa-solid fa-truck"></i> Free pan-India delivery on orders above ₹499</p>
+            <button type="button" class="btn btn-primary btn-full" id="btnCheckoutDemo">
+                <i class="fa-solid fa-lock"></i> Proceed to Checkout (Demo)
+            </button>
+        </div>
+    </aside>
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+
+    <!-- MODAL: AUTHENTICATION (SIGN IN / REGISTER / FORGOT PASSWORD) -->
+    <div class="modal-backdrop" id="authModal" aria-hidden="true">
+        <div class="modal-dialog modal-auth-dialog">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <i class="fa-solid fa-lock" id="authModalHeaderIcon"></i>
+                    <h3 id="authModalHeaderTitle">AYRA Member Access</h3>
+                </div>
+                <button type="button" class="modal-close-btn" id="authModalCloseBtn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body auth-modal-body">
+                <!-- Auth Tabs Navigation -->
+                <div class="auth-tabs-nav" role="tablist">
+                    <button type="button" class="auth-tab-btn active" id="tabBtnSignIn" data-target="signInTabPanel" role="tab" aria-selected="true">
+                        <i class="fa-solid fa-right-to-bracket"></i> Sign In
+                    </button>
+                    <button type="button" class="auth-tab-btn" id="tabBtnSignUp" data-target="signUpTabPanel" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-user-plus"></i> Join AYRA
+                    </button>
+                </div>
+
+                <!-- Alert / Status Banner in Modal -->
+                <div class="auth-feedback-banner" id="authFeedbackBanner" style="display:none;" role="alert"></div>
+
+                <!-- Tab Panel 1: Sign In -->
+                <div class="auth-tab-panel active" id="signInTabPanel">
+                    <form id="signInForm" class="modal-form" novalidate>
+                        <div class="form-group">
+                            <label for="signInEmail">Email Address <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" id="signInEmail" class="form-control" placeholder="you@domain.com" required autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label-with-action">
+                                <label for="signInPassword">Password <span class="required">*</span></label>
+                                <button type="button" class="link-btn-subtle" id="btnShowForgotPassword">Forgot password?</button>
+                            </div>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-key input-icon"></i>
+                                <input type="password" id="signInPassword" class="form-control" placeholder="••••••••" required autocomplete="current-password">
+                                <button type="button" class="btn-toggle-pwd" data-target="signInPassword" aria-label="Toggle password view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="signInSubmitBtn">
+                            <i class="fa-solid fa-right-to-bracket"></i> <span>Sign In Securely</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Tab Panel 2: Sign Up (Registration) -->
+                <div class="auth-tab-panel" id="signUpTabPanel">
+                    <form id="signUpForm" class="modal-form" novalidate>
+                        <div class="form-group">
+                            <label for="signUpFullName">Full Name <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-user input-icon"></i>
+                                <input type="text" id="signUpFullName" class="form-control" placeholder="e.g. Priya Sharma" required autocomplete="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpEmail">Email Address <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" id="signUpEmail" class="form-control" placeholder="you@domain.com" required autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpPassword">Password (Min. 6 chars) <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-lock input-icon"></i>
+                                <input type="password" id="signUpPassword" class="form-control" placeholder="Create strong password" required minlength="6" autocomplete="new-password">
+                                <button type="button" class="btn-toggle-pwd" data-target="signUpPassword" aria-label="Toggle password view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpConfirmPassword">Confirm Password <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-shield-check input-icon"></i>
+                                <input type="password" id="signUpConfirmPassword" class="form-control" placeholder="Repeat password" required minlength="6" autocomplete="new-password">
+                            </div>
+                        </div>
+                        <p class="auth-security-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Your account grants access to free legal clinics, workshop tickets, and community peer circles.
+                        </p>
+                        <button type="submit" class="btn btn-primary btn-full" id="signUpSubmitBtn">
+                            <i class="fa-solid fa-sparkles"></i> <span>Create AYRA Account</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Tab Panel 3: Forgot Password (Password Recovery) -->
+                <div class="auth-tab-panel" id="forgotPasswordTabPanel">
+                    <div class="forgot-pwd-header">
+                        <h4>Reset Your Password</h4>
+                        <p>Enter your registered email address and we'll send a password recovery link to your inbox.</p>
+                    </div>
+                    <form id="forgotPasswordForm" class="modal-form" novalidate>
+                        <div class="form-group">
+                            <label for="forgotPasswordEmail">Registered Email Address <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" id="forgotPasswordEmail" class="form-control" placeholder="you@domain.com" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="forgotPasswordSubmitBtn">
+                            <i class="fa-regular fa-paper-plane"></i> <span>Send Reset Link</span>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-full" id="btnBackToSignIn" style="margin-top: 0.5rem;">
+                            <i class="fa-solid fa-arrow-left"></i> Back to Sign In
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PROTECTED USER DASHBOARD -->
+    <div class="modal-backdrop" id="dashboardModal" aria-hidden="true">
+        <div class="modal-dialog modal-dashboard-dialog">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <h3>AYRA Member Dashboard</h3>
+                </div>
+                <button type="button" class="modal-close-btn" id="dashboardModalCloseBtn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body dashboard-modal-body">
+                <!-- User Profile Header Card -->
+                <div class="dashboard-user-card">
+                    <div class="user-avatar-circle">
+                        <span id="dashAvatarInitial">A</span>
+                    </div>
+                    <div class="user-card-meta">
+                        <h4 id="dashUserFullName">AYRA Member</h4>
+                        <p id="dashUserEmail">member@ayra.org</p>
+                        <div class="user-badges-wrap">
+                            <span class="badge-role" id="dashUserRoleBadge">Beneficiary</span>
+                            <span class="badge-security"><i class="fa-solid fa-shield-check"></i> Verified Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Tabs Navigation -->
+                <div class="dashboard-tabs-nav" role="tablist">
+                    <button type="button" class="dash-tab-btn active" data-tab="tabProfile">
+                        <i class="fa-regular fa-user"></i> Profile Settings
+                    </button>
+                    <button type="button" class="dash-tab-btn" data-tab="tabWorkshops">
+                        <i class="fa-regular fa-calendar-check"></i> My Workshops
+                    </button>
+                    <button type="button" class="dash-tab-btn" data-tab="tabInquiries">
+                        <i class="fa-regular fa-comments"></i> Inquiries
+                    </button>
+                    <button type="button" class="dash-tab-btn" data-tab="tabSecurity">
+                        <i class="fa-solid fa-lock"></i> Security
+                    </button>
+                    <button type="button" class="dash-tab-btn" data-tab="tabBookmarks">
+                        <i class="fa-regular fa-bookmark"></i> Saved
+                    </button>
+                </div>
+
+                <!-- Tab 1: Profile & Preferences -->
+                <div class="dash-panel active" id="tabProfile">
+                    <form id="profileUpdateForm" class="modal-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="profFullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="profFullName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="profPhone">Mobile Number</label>
+                                <input type="tel" id="profPhone" class="form-control" placeholder="10-digit mobile">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="profCity">City</label>
+                                <input type="text" id="profCity" class="form-control" placeholder="e.g. Pune, Chennai">
+                            </div>
+                            <div class="form-group">
+                                <label for="profState">State / UT</label>
+                                <input type="text" id="profState" class="form-control" placeholder="e.g. Maharashtra">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="profLanguage">Preferred Platform Language</label>
+                            <select id="profLanguage" class="form-control">
+                                <option value="en">English</option>
+                                <option value="hi">हिंदी (Hindi)</option>
+                                <option value="ta">தமிழ் (Tamil)</option>
+                                <option value="te">తెలుగు (Telugu)</option>
+                                <option value="bn">বাংলা (Bengali)</option>
+                                <option value="mr">मराठी (Marathi)</option>
+                                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm" id="btnSaveProfile">
+                            <i class="fa-solid fa-floppy-disk"></i> Save Profile Changes
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Tab 2: My Workshop Registrations -->
+                <div class="dash-panel" id="tabWorkshops">
+                    <div class="dashboard-list-container" id="dashWorkshopsList">
+                        <p class="empty-list-notice"><i class="fa-regular fa-calendar-xmark"></i> Loading your workshop registrations...</p>
+                    </div>
+                </div>
+
+                <!-- Tab 3: My Inquiries -->
+                <div class="dash-panel" id="tabInquiries">
+                    <div class="dashboard-list-container" id="dashInquiriesList">
+                        <p class="empty-list-notice"><i class="fa-regular fa-comment-dots"></i> Loading your confidential inquiries...</p>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Security (Password Update) -->
+                <div class="dash-panel" id="tabSecurity">
+                    <form id="changePasswordForm" class="modal-form">
+                        <div class="form-group">
+                            <label for="newPassword">New Password (Min. 6 chars) <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-lock input-icon"></i>
+                                <input type="password" id="newPassword" class="form-control" placeholder="Enter new password" required minlength="6">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmNewPassword">Confirm New Password <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-shield-check input-icon"></i>
+                                <input type="password" id="confirmNewPassword" class="form-control" placeholder="Re-enter new password" required minlength="6">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm" id="btnUpdatePassword">
+                            <i class="fa-solid fa-key"></i> Update Password
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Tab 5: Saved Bookmarks -->
+                <div class="dash-panel" id="tabBookmarks">
+                    <div class="dashboard-list-container" id="dashBookmarksList">
+                        <p class="empty-list-notice"><i class="fa-regular fa-bookmark"></i> Loading your saved resources...</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer dashboard-modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnDashSignOut">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out of AYRA
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- SUPABASE CLIENT & BACKEND INTEGRATION BRIDGE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-client.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
